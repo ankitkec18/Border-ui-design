@@ -1,0 +1,150 @@
+ @import url('https://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700,800,900');
+ *
+ {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'poppins',sans-serif;
+ }
+ h2
+ {
+     margin-bottom: 15px;
+ }
+ body
+ {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     flex-wrap: wrap;
+     background: #010615;
+ }
+ .box
+ {
+     position: relative;
+     width: 300px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #060c21;
+     margin: 40px;
+ }
+ .box:before
+ {
+     content: '';
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fff;
+     z-index: -1;
+ }
+ .box:after
+ {
+     content: '';
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fff;
+     z-index: -2;
+     filter: blur(40px);
+ }
+ .box:nth-child(1):before,
+ .box:nth-child(1):after
+ {
+     background: linear-gradient(235deg,#ff6600,#010615,purple);
+ }
+
+ .box:nth-child(2):before,
+ .box:nth-child(2):after
+ {
+     background: linear-gradient(235deg,#89ff00,#010615,#fbff00);
+ }
+
+ .box:nth-child(3):before,
+ .box:nth-child(3):after
+ {
+     background: linear-gradient(235deg,#5f0cf0,#010615,#00bcd4);
+ }
+
+
+.box .glass
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: rgba(225,225,225,.1);
+    pointer-events: none;
+}
+.box .content
+{
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
